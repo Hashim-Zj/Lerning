@@ -3,24 +3,43 @@
 
 int main()
 {
-    unsigned int num, i, j, k;
+    unsigned int num, i, k;
     printf("enter a number :");
     scanf("%d", &num);
 
-    for (i = 0; i < num; i++)
+    for (i = ; i <= 0; i--)
     {
-        printf("\t");
-        for (j = num; j <= 1; j--)
-        {
-            printf("mmnnnnnnnnnn");
-        }
         for (k = 0; k < i; k++)
         {
-             printf("*\t\t");
-        }
 
+            printf("*  ");
+        }
         printf("\n");
     }
 
     return 0;
 }
+
+
+//Star inversion
+
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main()
+// {
+//     unsigned int num, i, k;
+//     printf("enter a number :");
+//     scanf("%d", &num);
+//     for (i = num; i > 0; i--)
+//     {
+
+//         for (k = 0; k < i; k++)
+//         {
+//             printf("*  ");
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
