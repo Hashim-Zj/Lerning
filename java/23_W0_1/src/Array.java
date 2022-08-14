@@ -1,15 +1,30 @@
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class Array {
 	Scanner sc=new Scanner(System.in);
 	
-	void getArray(int l) {
-		int[][] arr = null;
-		System.out.println("Enter The values in "+l+"x"+l+"Metrix:");
+	int[][] getArray(int l) {
+		int[][] arr = new int[l][l];
+		
 		for(int i=0;i<l;i++) {
 			for(int j=0;j<l;j++) {
 				 arr[i][j]=sc.nextInt();
 			}
 		}
+		return arr;
+	}
+	int[][] displayArray(int l) {
+		
+		int[][] arr=getArray(l);
+		System.out.println(+l+"x"+l+"Metrix is :");
+		for(int i=0;i<l;i++) {
+			for(int j=0;j<l;j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println('\n');
+		}
+		return arr;
 	}
 }

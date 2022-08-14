@@ -7,8 +7,8 @@ public class Week_0_1_23 {
 		
 		System.out.println("Enter the Array Limit");
 		int limit=sc.nextInt();
-		
-	arr.getArray(limit);
+		System.out.println("Enter The values in "+limit+"x"+limit+"Metrix:");	
+		arr.displayArray(limit);
 		
 	}
 }
