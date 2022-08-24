@@ -1,2 +1,0 @@
-module First_sample {
-}
